@@ -1,20 +1,38 @@
 # InsertionSortProject
 
-Insertion Sort Aşamaları (Dizi: [22,27,16,2,18,6])
+### Insertion Sort Aşamaları (Dizi: [22,27,16,2,18,6])
+
 Insertion Sort algoritması, her elemanı bir önceki sıralı diziye ekleyerek sıralama işlemi gerçekleştirir. Aşamalar şu şekildedir:
 
-İlk eleman zaten sıralı kabul edilir: [22]
-İkinci eleman 27, 22'den büyük olduğu için yer değiştirmez: [22,27]
-Üçüncü eleman 16, 27'den küçük olduğu için önce onunla, sonra 22 ile karşılaştırılarak öne alınır: [16,22,27]
-Dördüncü eleman 2, 16'dan küçük olduğu için en başa alınır: [2,16,22,27]
-Beşinci eleman 18, 22'den küçük ama 16'dan büyük olduğu için aralarına yerleştirilir: [2,16,18,22,27]
-Son eleman 6, 16'dan küçük olduğu için aralarına yerleştirilir: [2,6,16,18,22,27]
-Big-O Gösterimi
-Big-O Notasyonu (Worst Case): Insertion Sort'un en kötü durum zaman karmaşıklığı O(n²)'dir, çünkü her eleman için geri dönüp karşılaştırma yapması gerekebilir.
-Time Complexity
-18 sayısı sıralı dizide ortalarda bulunur (3. indeks). Bu nedenle:
+1. İlk eleman zaten sıralı kabul edilir: **[22]**
+2. İkinci eleman 27, 22'den büyük olduğu için yer değiştirmez: **[22,27]**
+3. Üçüncü eleman 16, 27'den küçük olduğu için önce onunla, sonra 22 ile karşılaştırılarak öne alınır: **[16,22,27]**
+4. Dördüncü eleman 2, 16'dan küçük olduğu için en başa alınır: **[2,16,22,27]**
+5. Beşinci eleman 18, 22'den küçük ama 16'dan büyük olduğu için aralarına yerleştirilir: **[2,16,18,22,27]**
+6. Son eleman 6, 16'dan küçük olduğu için aralarına yerleştirilir: **[2,6,16,18,22,27]**
 
-Average Case kapsamına girer.
+### Big-O Gösterimi
+
+- **Big-O Notasyonu (Worst Case)**: Insertion Sort'un en kötü durum zaman karmaşıklığı **O(n²)**'dir, çünkü her eleman için geri dönüp karşılaştırma yapması gerekebilir.
+  
+### Time Complexity
+
+18 sayısı sıralı dizide ortalarda bulunur (3. indeks). Bu nedenle:
+- **Average Case** kapsamına girer.
+
+---
+
+### Selection Sort Aşamaları ([7,3,5,8,2,9,4,15,6])
+
+Selection Sort her adımda en küçük elemanı bulup, sıralı dizinin sonuna ekler.
+
+1. İlk adım: Dizideki en küçük eleman 2, 7 ile yer değiştirilir. **[2,3,5,8,7,9,4,15,6]**
+2. İkinci adım: 3 en küçük eleman olarak kalır, yer değiştirmez. **[2,3,5,8,7,9,4,15,6]**
+3. Üçüncü adım: 5 en küçük olarak kalır, yer değiştirmez. **[2,3,5,8,7,9,4,15,6]**
+4. Dördüncü adım: 4 en küçük elemandır, 8 ile yer değiştirilir. **[2,3,5,4,7,9,8,15,6]**
+
+Bu dört adım sonrasında dizi sıralama işlemine devam eder.
+
 
 
 ### Merge Sort Aşamaları (Dizi: [16,21,11,8,12,22])
