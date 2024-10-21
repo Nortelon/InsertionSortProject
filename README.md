@@ -33,7 +33,7 @@ Selection Sort her adımda en küçük elemanı bulup, sıralı dizinin sonuna e
 
 Bu dört adım sonrasında dizi sıralama işlemine devam eder.
 
-
+---
 
 ### Merge Sort Aşamaları (Dizi: [16,21,11,8,12,22])
 
