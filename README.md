@@ -66,3 +66,52 @@ Sonuç olarak sıralı dizi: **[8,11,12,16,21,22]**
 ### Big-O Gösterimi
 
 Merge Sort'un zaman karmaşıklığı her durumda (best, worst, average case) **O(n log n)**'dir. Bu, diziyi her seferinde ikiye böldüğü ve her aşamada tüm elemanları birleştirdiği için geçerlidir.
+
+---
+
+### Binary Search Tree Aşamaları (Dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2])
+
+Verilen diziyi kullanarak Binary Search Tree (BST) oluştururken, her elemanı sırayla ekleyip, küçük olanları sola, büyük olanları sağa yerleştiririz.
+
+1. **Root 7'dir.**
+   - Root olarak ilk eleman seçilir: **7**
+
+2. **5, 7'nin solunda bulunur.**
+   - 5, 7'den küçük olduğu için soluna yerleştirilir.
+
+3. **1, 5'in solunda bulunur.**
+   - 1, 5'ten küçük olduğu için 5'in soluna yerleştirilir.
+
+4. **8, 7'nin sağında bulunur.**
+   - 8, 7'den büyük olduğu için sağa eklenir.
+
+5. **3, 1'in sağında bulunur.**
+   - 3, 1'den büyük olduğu için 1'in sağına eklenir.
+
+6. **6, 5'in sağında bulunur.**
+   - 6, 5'ten büyük olduğu için 5'in sağına eklenir.
+
+7. **0, 1'in solunda bulunur.**
+   - 0, 1'den küçük olduğu için 1'in soluna eklenir.
+
+8. **9, 8'in sağında bulunur.**
+   - 9, 8'den büyük olduğu için 8'in sağına eklenir.
+
+9. **4, 3'ün sağında bulunur.**
+   - 4, 3'ten büyük olduğu için 3'ün sağına eklenir.
+
+10. **2, 3'ün solunda bulunur.**
+    - 2, 3'ten küçük olduğu için 3'ün soluna eklenir.
+
+### Sonuçta elde edilen Binary Search Tree yapısı şu şekildedir:
+
+        7
+       / \
+      5   8
+     / \    \
+    1   6    9
+   / \
+  0   3
+     / \
+    2   4
+
