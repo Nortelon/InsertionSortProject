@@ -15,3 +15,36 @@ Time Complexity
 18 sayısı sıralı dizide ortalarda bulunur (3. indeks). Bu nedenle:
 
 Average Case kapsamına girer.
+
+
+### Merge Sort Aşamaları (Dizi: [16,21,11,8,12,22])
+
+Merge Sort algoritması, bir diziyi sürekli olarak ikiye bölerek en küçük parçalara ayırır, ardından bu parçaları sıralayarak birleştirir. İşte aşamaları:
+
+1. **Diziyi ikiye bölme**: 
+   - [16,21,11] ve [8,12,22]
+
+2. **Her iki parçayı tekrar ikiye bölme**:
+   - [16,21,11] → [16] ve [21,11]
+   - [21,11] → [21] ve [11]
+   - [8,12,22] → [8] ve [12,22]
+   - [12,22] → [12] ve [22]
+
+3. **Tek elemanlı parçaları sıralama**:
+   - [16] → zaten sıralı
+   - [21,11] → [11,21] (sıralanır)
+   - [8] → zaten sıralı
+   - [12,22] → zaten sıralı
+
+4. **Parçaları sıralı şekilde birleştirme**:
+   - [16] ve [11,21] → [11,16,21]
+   - [8] ve [12,22] → [8,12,22]
+
+5. **İki ana parçayı birleştirme**:
+   - [11,16,21] ve [8,12,22] → [8,11,12,16,21,22]
+
+Sonuç olarak sıralı dizi: **[8,11,12,16,21,22]**
+
+### Big-O Gösterimi
+
+Merge Sort'un zaman karmaşıklığı her durumda (best, worst, average case) **O(n log n)**'dir. Bu, diziyi her seferinde ikiye böldüğü ve her aşamada tüm elemanları birleştirdiği için geçerlidir.
